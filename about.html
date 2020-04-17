@@ -1,0 +1,43 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="html.css">
+    <title>About</title>
+</head>
+<script src="jquery.js"></scriptsrc></script>
+<body>
+    <div id="header">
+        <h1><a href="index.html">←Top</a></h1>
+    </div>
+    <nav class="NavMenu">
+        　<ul>
+        　　<li><a href="work.html">Work</a></li>
+        　　<li><a href="skill.html">Skill</a></li>
+        　　<li><a href="about.html">About</a></li>
+        　</ul>
+        </nav>
+        <!-- ハンバーガーメニュー部分 --> 
+        <div class="Toggle">
+        　　<span></span>
+        　　<span></span>
+        　　<span></span>
+        </div>
+        <script type="text/javascript">
+            $(function() {
+            　$('.Toggle').click(function() {
+            　　$(this).toggleClass('active');
+            
+            　if ($(this).hasClass('active')) {
+            　　$('.NavMenu').addClass('active');　 //クラスを付与
+            　} else {
+            　　$('.NavMenu').removeClass('active'); //クラスを外す
+            　}
+            　});
+            });
+        </script>
+    <div id="main">
+        
+    </div>
+</body>
+</html>
